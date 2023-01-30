@@ -2,7 +2,6 @@ package com.choice.monkeyfoodfork.di
 
 import android.app.Application
 import androidx.room.Room
-import com.choice.local.dao.RecipeDao
 import com.choice.monkeyfoodfork.database.AppDatabase
 import dagger.Module
 import dagger.Provides
