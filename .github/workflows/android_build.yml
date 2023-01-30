@@ -3,7 +3,8 @@ name: Android Build
 on:
   push:
     branches:
-      - origin
+      - master
+      - master_dev
 
 jobs:
   build:
@@ -11,16 +12,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
 
       - name: Set Up JDK
-        uses: actions/setup-java@v1
+        uses: actions/setup-java@v3
         with:
           java-version: 1.8
 
-      - name: Change wrapper permissions
-        run: chmod +x ./gradlew
-
-
       - name: Build Project
-        run: ./gradlew assemble
+        run: bash ./gradlew assembleDebug --stacktrace
