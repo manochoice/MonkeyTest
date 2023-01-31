@@ -6,9 +6,9 @@ on:
       - master
       - master_dev
 
-jobs:
-  build:
-     runs-on: ubuntu-latest
+    jobs:
+      build:
+        runs-on: ubuntu-latest
 
     steps:
       - uses: actions/setup-java@v3
