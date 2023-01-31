@@ -3,8 +3,7 @@ name: Android Build
 on:
   push:
     branches:
-      - master
-      - master_dev
+      - origin
 
 jobs:
   build:
