@@ -18,7 +18,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: 1.8
-            distribution: 'temurin'
+            distribution: temurin
             cache: gradle
 
       - name: Build Project
