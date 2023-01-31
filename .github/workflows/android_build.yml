@@ -19,7 +19,7 @@ jobs:
         with:
           java-version: 1.8
             distribution: temurin
-            cache: gradle
+            cache: 'gradle'
 
       - name: Build Project
         run: ./gradlew assembleDebug --stacktrace
