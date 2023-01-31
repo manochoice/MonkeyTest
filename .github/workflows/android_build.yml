@@ -3,7 +3,8 @@ name: Android Build
 on:
   push:
     branches:
-      - origin
+      - master
+      - master_dev
 
 jobs:
   build:
@@ -19,4 +20,4 @@ jobs:
           java-version: 1.8
 
       - name: Build Project
-        run: bash ./gradlew assembleDebug --stacktrace
+        run: ./gradlew assembleDebug --stacktrace
